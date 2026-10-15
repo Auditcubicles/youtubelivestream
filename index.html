@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Unbroken</title>
+<title>YouTube Live Stream</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -142,7 +142,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="brand"><i></i>Unbroken</div>
+    <div class="brand"><i></i>Youtube Live Stream</div>
     <div class="clock" id="clock" aria-label="Current time"></div>
   </header>
 
@@ -247,8 +247,8 @@ const store = {
   set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} },
   del(k){ try{ localStorage.removeItem(k); }catch(e){} }
 };
-const SESSION_KEY = "unbroken.session";
-const VOL_KEY = "unbroken.volume";
+const SESSION_KEY = "YouTube Live Stream.session";
+const VOL_KEY = "YouTube Live Stream.volume";
 const HOLD_MS = 2500;
 
 const S = { p:null, id:null, active:false, duration:0, title:"", ref:null, lastFix:0, readyAt:0, saveAt:0, wake:null, tapShown:false };
